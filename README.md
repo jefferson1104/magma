@@ -286,11 +286,9 @@ Ref: https://magma.github.io/magma/docs/orc8r/deploy_install
  helm_pass           = "{GitHubToken}"
  seed_certs_dir      = "~/secrets/certs"
                 
- From: orc8r_chart_version = "1.4.7"
- To:   orc8r_chart_version = "1.4.21"
-
- From: orc8r_tag           = "1.0.1"
- To:   orc8r_tag           = "v1.1.0-master"
+ orc8r_chart_version = "1.4.21"
+ 
+ orc8r_tag           = "v1.1.0-master"
 </pre>        
         
 ##### after edit and saving the main.tf file
