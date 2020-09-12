@@ -205,10 +205,10 @@ Ref: https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.h
  $ mkdir -p ~/secrets/certs; cd ~/secrets/certs
         
  <b>In case you don't have the Certs File you can use self-sign certs, if this is your case use the command below</b>
- $ ~/Magma/magma-1.1.0/orc8r/cloud/deploy/scripts/self_sign_certs.sh yourdomain.com
+ $ ~/{Your Path}/magma-1.1.0/orc8r/cloud/deploy/scripts/self_sign_certs.sh yourdomain.com
         
  <b>This command will create the application certs:</b>
- $ ~/Magma/magma-1.1.0/orc8r/cloud/deploy/scripts/create_application_certs.sh yourdomain.com
+ $ ~/{Your Path}/magma-1.1.0/orc8r/cloud/deploy/scripts/create_application_certs.sh yourdomain.com
 </pre>
 Ref: https://magma.github.io/magma/docs/orc8r/deploy_install
 
