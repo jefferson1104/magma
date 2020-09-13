@@ -339,14 +339,14 @@ Ref: https://magma.github.io/magma/docs/orc8r/deploy_install
 
 <pre>
  $ terraform apply
- $ kubectl exec -it $(kubectl get pod -l app.kubernetes.io/component=magmalte -o jsonpath='{.items[0].metadata.name}') -- yarn setAdminPassword master 
-
- {your.email@your.company.com} {your password}
- yarn run v1.22.4
- $ node -r '@fbcnms/babel-register' scripts/setPassword.js master {your.email@your.company.com} {your password}
-
- Creating a new user: email={your.email@your.company.com}, password={your password}
+ $ kubectl exec -it $(kubectl get pod -l app.kubernetes.io/component=magmalte -o jsonpath='{.items[0].metadata.name}') -- yarn setAdminPassword master {your.email@your.company.com} {your password}
 </pre>
+
+##### OUTPUT:
+yarn run v1.22.4
+$ node -r '@fbcnms/babel-register' scripts/setPassword.js master {your.email@your.company.com} {your password}
+Creating a new user: email={your.email@your.company.com}, password={your password}
+Success
 
 #### 10 - DNS Resolution
  Use the information at AWS Route53 to create the CNAME at your main NS Record.
